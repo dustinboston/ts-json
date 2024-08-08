@@ -2,12 +2,12 @@
 
 > Convert TypeScript to JSON
 
-# Usage
+## Usage
 
 ```bash
 deno run https://jsr.io/dustinboston/ts.json ./example.ts > example.json
 ```
 
-# License
+## License
 
 See [LICENSE](LICENSE).
