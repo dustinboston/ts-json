@@ -1,0 +1,1033 @@
+{
+  "endOfFileToken": {
+    "kind": "EndOfFileToken"
+  },
+  "fileName": "mod.ts",
+  "kind": "SourceFile",
+  "libReferenceDirectives": [],
+  "referencedFiles": [],
+  "statements": [
+    {
+      "importClause": {
+        "kind": "ImportClause",
+        "name": {
+          "kind": "Identifier",
+          "text": "ts"
+        }
+      },
+      "kind": "ImportDeclaration",
+      "moduleSpecifier": {
+        "kind": "StringLiteral",
+        "text": "npm:typescript"
+      }
+    },
+    {
+      "importClause": {
+        "kind": "ImportClause",
+        "namedBindings": {
+          "elements": [
+            {
+              "kind": "ImportSpecifier",
+              "name": {
+                "kind": "Identifier",
+                "text": "properties"
+              }
+            }
+          ],
+          "kind": "NamedImports"
+        }
+      },
+      "kind": "ImportDeclaration",
+      "moduleSpecifier": {
+        "kind": "StringLiteral",
+        "text": "./props.ts"
+      }
+    },
+    {
+      "body": {
+        "kind": "Block",
+        "multiLine": true,
+        "statements": [
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "arguments": [
+                      {
+                        "kind": "Identifier",
+                        "text": "file"
+                      },
+                      {
+                        "kind": "Identifier",
+                        "text": "data"
+                      },
+                      {
+                        "expression": {
+                          "expression": {
+                            "kind": "Identifier",
+                            "text": "ts"
+                          },
+                          "kind": "PropertyAccessExpression",
+                          "name": {
+                            "kind": "Identifier",
+                            "text": "ScriptTarget"
+                          }
+                        },
+                        "kind": "PropertyAccessExpression",
+                        "name": {
+                          "kind": "Identifier",
+                          "text": "Latest"
+                        }
+                      },
+                      {
+                        "kind": "FalseKeyword"
+                      }
+                    ],
+                    "expression": {
+                      "expression": {
+                        "kind": "Identifier",
+                        "text": "ts"
+                      },
+                      "kind": "PropertyAccessExpression",
+                      "name": {
+                        "kind": "Identifier",
+                        "text": "createSourceFile"
+                      }
+                    },
+                    "kind": "CallExpression"
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "sauce"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "arguments": [
+                      {
+                        "kind": "Identifier",
+                        "text": "sauce"
+                      }
+                    ],
+                    "expression": {
+                      "kind": "Identifier",
+                      "text": "visit"
+                    },
+                    "kind": "CallExpression"
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "obj"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "expression": {
+              "arguments": [
+                {
+                  "kind": "Identifier",
+                  "text": "obj"
+                },
+                {
+                  "kind": "NullKeyword"
+                },
+                {
+                  "kind": "FirstLiteralToken",
+                  "text": "2"
+                }
+              ],
+              "expression": {
+                "expression": {
+                  "kind": "Identifier",
+                  "text": "JSON"
+                },
+                "kind": "PropertyAccessExpression",
+                "name": {
+                  "kind": "Identifier",
+                  "text": "stringify"
+                }
+              },
+              "kind": "CallExpression"
+            },
+            "kind": "ReturnStatement"
+          }
+        ]
+      },
+      "kind": "FunctionDeclaration",
+      "modifiers": [
+        {
+          "kind": "ExportKeyword"
+        }
+      ],
+      "name": {
+        "kind": "Identifier",
+        "text": "convert"
+      },
+      "parameters": [
+        {
+          "kind": "Parameter",
+          "name": {
+            "kind": "Identifier",
+            "text": "file"
+          },
+          "type": {
+            "kind": "StringKeyword"
+          }
+        },
+        {
+          "kind": "Parameter",
+          "name": {
+            "kind": "Identifier",
+            "text": "data"
+          },
+          "type": {
+            "kind": "StringKeyword"
+          }
+        }
+      ]
+    },
+    {
+      "body": {
+        "kind": "Block",
+        "multiLine": true,
+        "statements": [
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "kind": "ObjectLiteralExpression",
+                    "properties": []
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "ast"
+                  },
+                  "type": {
+                    "kind": "AnyKeyword"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "expression": {
+              "arguments": [],
+              "expression": {
+                "expression": {
+                  "kind": "Identifier",
+                  "text": "properties"
+                },
+                "kind": "PropertyAccessExpression",
+                "name": {
+                  "kind": "Identifier",
+                  "text": "values"
+                }
+              },
+              "kind": "CallExpression"
+            },
+            "initializer": {
+              "declarations": [
+                {
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "prop"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "ForOfStatement",
+            "statement": {
+              "kind": "Block",
+              "multiLine": true,
+              "statements": [
+                {
+                  "expression": {
+                    "kind": "BinaryExpression",
+                    "left": {
+                      "kind": "PrefixUnaryExpression",
+                      "operand": {
+                        "kind": "Identifier",
+                        "text": "node"
+                      }
+                    },
+                    "operatorToken": {
+                      "kind": "BarBarToken"
+                    },
+                    "right": {
+                      "kind": "PrefixUnaryExpression",
+                      "operand": {
+                        "argumentExpression": {
+                          "kind": "Identifier",
+                          "text": "prop"
+                        },
+                        "expression": {
+                          "kind": "Identifier",
+                          "text": "node"
+                        },
+                        "kind": "ElementAccessExpression"
+                      }
+                    }
+                  },
+                  "kind": "IfStatement",
+                  "thenStatement": {
+                    "kind": "ContinueStatement"
+                  }
+                },
+                {
+                  "declarationList": {
+                    "declarations": [
+                      {
+                        "initializer": {
+                          "argumentExpression": {
+                            "kind": "Identifier",
+                            "text": "prop"
+                          },
+                          "expression": {
+                            "kind": "Identifier",
+                            "text": "node"
+                          },
+                          "kind": "ElementAccessExpression"
+                        },
+                        "kind": "VariableDeclaration",
+                        "name": {
+                          "kind": "Identifier",
+                          "text": "nodeProp"
+                        }
+                      }
+                    ],
+                    "kind": "VariableDeclarationList"
+                  },
+                  "kind": "FirstStatement"
+                },
+                {
+                  "elseStatement": {
+                    "elseStatement": {
+                      "elseStatement": {
+                        "kind": "Block",
+                        "multiLine": true,
+                        "statements": [
+                          {
+                            "declarationList": {
+                              "declarations": [
+                                {
+                                  "initializer": {
+                                    "expression": {
+                                      "kind": "Identifier",
+                                      "text": "nodeProp"
+                                    },
+                                    "kind": "TypeOfExpression"
+                                  },
+                                  "kind": "VariableDeclaration",
+                                  "name": {
+                                    "kind": "Identifier",
+                                    "text": "type"
+                                  }
+                                }
+                              ],
+                              "kind": "VariableDeclarationList"
+                            },
+                            "kind": "FirstStatement"
+                          },
+                          {
+                            "elseStatement": {
+                              "expression": {
+                                "kind": "BinaryExpression",
+                                "left": {
+                                  "kind": "Identifier",
+                                  "text": "type"
+                                },
+                                "operatorToken": {
+                                  "kind": "EqualsEqualsEqualsToken"
+                                },
+                                "right": {
+                                  "kind": "StringLiteral",
+                                  "text": "object"
+                                }
+                              },
+                              "kind": "IfStatement",
+                              "thenStatement": {
+                                "kind": "Block",
+                                "multiLine": true,
+                                "statements": [
+                                  {
+                                    "expression": {
+                                      "kind": "BinaryExpression",
+                                      "left": {
+                                        "argumentExpression": {
+                                          "kind": "Identifier",
+                                          "text": "prop"
+                                        },
+                                        "expression": {
+                                          "kind": "Identifier",
+                                          "text": "ast"
+                                        },
+                                        "kind": "ElementAccessExpression"
+                                      },
+                                      "operatorToken": {
+                                        "kind": "FirstAssignment"
+                                      },
+                                      "right": {
+                                        "arguments": [
+                                          {
+                                            "kind": "Identifier",
+                                            "text": "nodeProp"
+                                          }
+                                        ],
+                                        "expression": {
+                                          "kind": "Identifier",
+                                          "text": "visit"
+                                        },
+                                        "kind": "CallExpression"
+                                      }
+                                    },
+                                    "kind": "ExpressionStatement"
+                                  }
+                                ]
+                              }
+                            },
+                            "expression": {
+                              "kind": "BinaryExpression",
+                              "left": {
+                                "kind": "BinaryExpression",
+                                "left": {
+                                  "kind": "BinaryExpression",
+                                  "left": {
+                                    "kind": "Identifier",
+                                    "text": "type"
+                                  },
+                                  "operatorToken": {
+                                    "kind": "EqualsEqualsEqualsToken"
+                                  },
+                                  "right": {
+                                    "kind": "StringLiteral",
+                                    "text": "boolean"
+                                  }
+                                },
+                                "operatorToken": {
+                                  "kind": "BarBarToken"
+                                },
+                                "right": {
+                                  "kind": "BinaryExpression",
+                                  "left": {
+                                    "kind": "Identifier",
+                                    "text": "type"
+                                  },
+                                  "operatorToken": {
+                                    "kind": "EqualsEqualsEqualsToken"
+                                  },
+                                  "right": {
+                                    "kind": "StringLiteral",
+                                    "text": "number"
+                                  }
+                                }
+                              },
+                              "operatorToken": {
+                                "kind": "BarBarToken"
+                              },
+                              "right": {
+                                "kind": "BinaryExpression",
+                                "left": {
+                                  "kind": "Identifier",
+                                  "text": "type"
+                                },
+                                "operatorToken": {
+                                  "kind": "EqualsEqualsEqualsToken"
+                                },
+                                "right": {
+                                  "kind": "StringLiteral",
+                                  "text": "string"
+                                }
+                              }
+                            },
+                            "kind": "IfStatement",
+                            "thenStatement": {
+                              "kind": "Block",
+                              "multiLine": true,
+                              "statements": [
+                                {
+                                  "expression": {
+                                    "kind": "BinaryExpression",
+                                    "left": {
+                                      "argumentExpression": {
+                                        "kind": "Identifier",
+                                        "text": "prop"
+                                      },
+                                      "expression": {
+                                        "kind": "Identifier",
+                                        "text": "ast"
+                                      },
+                                      "kind": "ElementAccessExpression"
+                                    },
+                                    "operatorToken": {
+                                      "kind": "FirstAssignment"
+                                    },
+                                    "right": {
+                                      "kind": "Identifier",
+                                      "text": "nodeProp"
+                                    }
+                                  },
+                                  "kind": "ExpressionStatement"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "arguments": [
+                          {
+                            "kind": "Identifier",
+                            "text": "nodeProp"
+                          }
+                        ],
+                        "expression": {
+                          "expression": {
+                            "kind": "Identifier",
+                            "text": "Array"
+                          },
+                          "kind": "PropertyAccessExpression",
+                          "name": {
+                            "kind": "Identifier",
+                            "text": "isArray"
+                          }
+                        },
+                        "kind": "CallExpression"
+                      },
+                      "kind": "IfStatement",
+                      "thenStatement": {
+                        "kind": "Block",
+                        "multiLine": true,
+                        "statements": [
+                          {
+                            "expression": {
+                              "kind": "BinaryExpression",
+                              "left": {
+                                "argumentExpression": {
+                                  "kind": "Identifier",
+                                  "text": "prop"
+                                },
+                                "expression": {
+                                  "kind": "Identifier",
+                                  "text": "ast"
+                                },
+                                "kind": "ElementAccessExpression"
+                              },
+                              "operatorToken": {
+                                "kind": "FirstAssignment"
+                              },
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "Identifier",
+                                    "text": "visit"
+                                  }
+                                ],
+                                "expression": {
+                                  "expression": {
+                                    "elements": [
+                                      {
+                                        "expression": {
+                                          "kind": "Identifier",
+                                          "text": "nodeProp"
+                                        },
+                                        "kind": "SpreadElement"
+                                      }
+                                    ],
+                                    "kind": "ArrayLiteralExpression"
+                                  },
+                                  "kind": "PropertyAccessExpression",
+                                  "name": {
+                                    "kind": "Identifier",
+                                    "text": "map"
+                                  }
+                                },
+                                "kind": "CallExpression"
+                              }
+                            },
+                            "kind": "ExpressionStatement"
+                          }
+                        ]
+                      }
+                    },
+                    "expression": {
+                      "arguments": [
+                        {
+                          "kind": "Identifier",
+                          "text": "nodeProp"
+                        }
+                      ],
+                      "expression": {
+                        "expression": {
+                          "kind": "Identifier",
+                          "text": "ts"
+                        },
+                        "kind": "PropertyAccessExpression",
+                        "name": {
+                          "kind": "Identifier",
+                          "text": "isTypeNode"
+                        }
+                      },
+                      "kind": "CallExpression"
+                    },
+                    "kind": "IfStatement",
+                    "thenStatement": {
+                      "kind": "Block",
+                      "multiLine": true,
+                      "statements": [
+                        {
+                          "expression": {
+                            "kind": "BinaryExpression",
+                            "left": {
+                              "argumentExpression": {
+                                "kind": "Identifier",
+                                "text": "prop"
+                              },
+                              "expression": {
+                                "kind": "Identifier",
+                                "text": "ast"
+                              },
+                              "kind": "ElementAccessExpression"
+                            },
+                            "operatorToken": {
+                              "kind": "FirstAssignment"
+                            },
+                            "right": {
+                              "arguments": [
+                                {
+                                  "kind": "Identifier",
+                                  "text": "nodeProp"
+                                }
+                              ],
+                              "expression": {
+                                "kind": "Identifier",
+                                "text": "visit"
+                              },
+                              "kind": "CallExpression"
+                            }
+                          },
+                          "kind": "ExpressionStatement"
+                        }
+                      ]
+                    }
+                  },
+                  "expression": {
+                    "kind": "BinaryExpression",
+                    "left": {
+                      "kind": "BinaryExpression",
+                      "left": {
+                        "kind": "Identifier",
+                        "text": "prop"
+                      },
+                      "operatorToken": {
+                        "kind": "EqualsEqualsEqualsToken"
+                      },
+                      "right": {
+                        "kind": "StringLiteral",
+                        "text": "kind"
+                      }
+                    },
+                    "operatorToken": {
+                      "kind": "BarBarToken"
+                    },
+                    "right": {
+                      "kind": "BinaryExpression",
+                      "left": {
+                        "kind": "Identifier",
+                        "text": "prop"
+                      },
+                      "operatorToken": {
+                        "kind": "EqualsEqualsEqualsToken"
+                      },
+                      "right": {
+                        "kind": "StringLiteral",
+                        "text": "token"
+                      }
+                    }
+                  },
+                  "kind": "IfStatement",
+                  "thenStatement": {
+                    "kind": "Block",
+                    "multiLine": true,
+                    "statements": [
+                      {
+                        "declarationList": {
+                          "declarations": [
+                            {
+                              "initializer": {
+                                "argumentExpression": {
+                                  "kind": "Identifier",
+                                  "text": "nodeProp"
+                                },
+                                "expression": {
+                                  "expression": {
+                                    "kind": "Identifier",
+                                    "text": "ts"
+                                  },
+                                  "kind": "PropertyAccessExpression",
+                                  "name": {
+                                    "kind": "Identifier",
+                                    "text": "SyntaxKind"
+                                  }
+                                },
+                                "kind": "ElementAccessExpression"
+                              },
+                              "kind": "VariableDeclaration",
+                              "name": {
+                                "kind": "Identifier",
+                                "text": "kind"
+                              }
+                            }
+                          ],
+                          "kind": "VariableDeclarationList"
+                        },
+                        "kind": "FirstStatement"
+                      },
+                      {
+                        "expression": {
+                          "kind": "BinaryExpression",
+                          "left": {
+                            "argumentExpression": {
+                              "kind": "Identifier",
+                              "text": "prop"
+                            },
+                            "expression": {
+                              "kind": "Identifier",
+                              "text": "ast"
+                            },
+                            "kind": "ElementAccessExpression"
+                          },
+                          "operatorToken": {
+                            "kind": "FirstAssignment"
+                          },
+                          "right": {
+                            "kind": "Identifier",
+                            "text": "kind"
+                          }
+                        },
+                        "kind": "ExpressionStatement"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "expression": {
+              "kind": "Identifier",
+              "text": "ast"
+            },
+            "kind": "ReturnStatement"
+          }
+        ]
+      },
+      "kind": "FunctionDeclaration",
+      "modifiers": [
+        {
+          "kind": "ExportKeyword"
+        }
+      ],
+      "name": {
+        "kind": "Identifier",
+        "text": "visit"
+      },
+      "parameters": [
+        {
+          "kind": "Parameter",
+          "name": {
+            "kind": "Identifier",
+            "text": "node"
+          },
+          "type": {
+            "kind": "AnyKeyword"
+          }
+        }
+      ]
+    },
+    {
+      "expression": {
+        "expression": {
+          "keywordToken": 102,
+          "kind": "MetaProperty",
+          "name": {
+            "kind": "Identifier",
+            "text": "meta"
+          }
+        },
+        "kind": "PropertyAccessExpression",
+        "name": {
+          "kind": "Identifier",
+          "text": "main"
+        }
+      },
+      "kind": "IfStatement",
+      "thenStatement": {
+        "kind": "Block",
+        "multiLine": true,
+        "statements": [
+          {
+            "expression": {
+              "kind": "PrefixUnaryExpression",
+              "operand": {
+                "expression": {
+                  "expression": {
+                    "kind": "Identifier",
+                    "text": "Deno"
+                  },
+                  "kind": "PropertyAccessExpression",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "args"
+                  }
+                },
+                "kind": "PropertyAccessExpression",
+                "name": {
+                  "kind": "Identifier",
+                  "text": "length"
+                }
+              }
+            },
+            "kind": "IfStatement",
+            "thenStatement": {
+              "kind": "Block",
+              "multiLine": true,
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "StringLiteral",
+                        "text": "No file"
+                      }
+                    ],
+                    "expression": {
+                      "expression": {
+                        "kind": "Identifier",
+                        "text": "console"
+                      },
+                      "kind": "PropertyAccessExpression",
+                      "name": {
+                        "kind": "Identifier",
+                        "text": "error"
+                      }
+                    },
+                    "kind": "CallExpression"
+                  },
+                  "kind": "ExpressionStatement"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "FirstLiteralToken",
+                        "text": "1"
+                      }
+                    ],
+                    "expression": {
+                      "expression": {
+                        "kind": "Identifier",
+                        "text": "Deno"
+                      },
+                      "kind": "PropertyAccessExpression",
+                      "name": {
+                        "kind": "Identifier",
+                        "text": "exit"
+                      }
+                    },
+                    "kind": "CallExpression"
+                  },
+                  "kind": "ExpressionStatement"
+                }
+              ]
+            }
+          },
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "argumentExpression": {
+                      "kind": "FirstLiteralToken",
+                      "text": "0"
+                    },
+                    "expression": {
+                      "expression": {
+                        "kind": "Identifier",
+                        "text": "Deno"
+                      },
+                      "kind": "PropertyAccessExpression",
+                      "name": {
+                        "kind": "Identifier",
+                        "text": "args"
+                      }
+                    },
+                    "kind": "ElementAccessExpression"
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "file"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "arguments": [],
+                    "expression": {
+                      "kind": "Identifier",
+                      "text": "TextDecoder"
+                    },
+                    "kind": "NewExpression"
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "decoder"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "kind": "Identifier",
+                            "text": "file"
+                          }
+                        ],
+                        "expression": {
+                          "expression": {
+                            "kind": "Identifier",
+                            "text": "Deno"
+                          },
+                          "kind": "PropertyAccessExpression",
+                          "name": {
+                            "kind": "Identifier",
+                            "text": "readFileSync"
+                          }
+                        },
+                        "kind": "CallExpression"
+                      }
+                    ],
+                    "expression": {
+                      "expression": {
+                        "kind": "Identifier",
+                        "text": "decoder"
+                      },
+                      "kind": "PropertyAccessExpression",
+                      "name": {
+                        "kind": "Identifier",
+                        "text": "decode"
+                      }
+                    },
+                    "kind": "CallExpression"
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "data"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "declarationList": {
+              "declarations": [
+                {
+                  "initializer": {
+                    "arguments": [
+                      {
+                        "kind": "Identifier",
+                        "text": "file"
+                      },
+                      {
+                        "kind": "Identifier",
+                        "text": "data"
+                      }
+                    ],
+                    "expression": {
+                      "kind": "Identifier",
+                      "text": "convert"
+                    },
+                    "kind": "CallExpression"
+                  },
+                  "kind": "VariableDeclaration",
+                  "name": {
+                    "kind": "Identifier",
+                    "text": "json"
+                  }
+                }
+              ],
+              "kind": "VariableDeclarationList"
+            },
+            "kind": "FirstStatement"
+          },
+          {
+            "expression": {
+              "arguments": [
+                {
+                  "kind": "Identifier",
+                  "text": "json"
+                }
+              ],
+              "expression": {
+                "expression": {
+                  "kind": "Identifier",
+                  "text": "console"
+                },
+                "kind": "PropertyAccessExpression",
+                "name": {
+                  "kind": "Identifier",
+                  "text": "log"
+                }
+              },
+              "kind": "CallExpression"
+            },
+            "kind": "ExpressionStatement"
+          }
+        ]
+      }
+    }
+  ],
+  "text": "// deno-lint-ignore-file no-explicit-any\nimport ts from \"npm:typescript\";\nimport { properties } from \"./props.ts\";\n\n/**\n * Converts a TypeScript file to JSON.\n * @param file The file to convert\n * @param data The contents of the file\n * @returns A JSON representation of the file\n * @internal\n */\nexport function convert(file: string, data: string) {\n  const sauce = ts.createSourceFile(file, data, ts.ScriptTarget.Latest, false);\n  const obj = visit(sauce);\n  return JSON.stringify(obj, null, 2);\n}\n\n/**\n * A visitor used to enumerate Ast nodes.\n * @param node A TypeScript AST node\n * @returns A JSON representation of the AST node\n * @internal\n */\nexport function visit(node: any) {\n  const ast: any = {};\n\n  for (const prop of properties.values()) {\n    if (!node || !node[prop]) continue;\n    const nodeProp = node[prop];\n\n    if (prop === \"kind\" || prop === \"token\") {\n      const kind = ts.SyntaxKind[nodeProp];\n      ast[prop] = kind;\n    } else if (ts.isTypeNode(nodeProp)) {\n      ast[prop] = visit(nodeProp);\n    } else if (Array.isArray(nodeProp)) {\n      ast[prop] = [...nodeProp].map(visit);\n    } else {\n      const type = typeof nodeProp;\n      if (type === \"boolean\" || type === \"number\" || type === \"string\") {\n        ast[prop] = nodeProp;\n      } else if (type === \"object\") {\n        ast[prop] = visit(nodeProp);\n      }\n    }\n  }\n\n  return ast;\n}\n\n/**\n * If the module is executed as a script, convert the file and print the JSON.\n */\nif (import.meta.main) {\n  if (!Deno.args.length) {\n    console.error(\"No file\");\n    Deno.exit(1);\n  }\n\n  const file = Deno.args[0];\n  const decoder = new TextDecoder();\n  const data = decoder.decode(Deno.readFileSync(file));\n  const json = convert(file, data);\n  console.log(json);\n}\n",
+  "typeReferenceDirectives": []
+}
