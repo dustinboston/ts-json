@@ -1,5 +1,0 @@
-{
-    "name": "dustinboston/ts.json",
-    "version": "1.0.0",
-    "exports": "./mod.ts"
-}
