@@ -1,5 +1,5 @@
 // deno-lint-ignore-file no-explicit-any
-import ts from "npm:typescript";
+import ts from "npm:typescript@5.5.3";
 import { properties } from "./props.ts";
 
 /**
@@ -9,7 +9,7 @@ import { properties } from "./props.ts";
  * @returns A JSON representation of the file
  * @internal
  */
-export function convert(file: string, data: string) {
+export function convert(file: string, data: string): string {
   const sauce = ts.createSourceFile(file, data, ts.ScriptTarget.Latest, false);
   const obj = visit(sauce);
   return JSON.stringify(obj, null, 2);
@@ -21,7 +21,7 @@ export function convert(file: string, data: string) {
  * @returns A JSON representation of the AST node
  * @internal
  */
-export function visit(node: any) {
+export function visit(node: any): any {
   const ast: any = {};
 
   for (const prop of properties.values()) {
